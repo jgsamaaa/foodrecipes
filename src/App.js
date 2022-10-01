@@ -1,9 +1,17 @@
+import Search from './components/Search';
+import Category from './components/Category';
+import Pages from './pages/Pages';
+
+import { BrowserRouter } from 'react-router-dom';
+
 function App() {
   return (
-    <div className="App">
-      <h1 className="text-center p-20 bg-blue-400 font-bold text-5xl">
-        Startin code
-      </h1>
+    <div>
+      <BrowserRouter>
+        <Search />
+        <Category />
+        <Pages />
+      </BrowserRouter>
     </div>
   );
 }
